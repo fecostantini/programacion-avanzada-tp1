@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+
+        /* 
+        #########################################################################################################################################
+        Realice una concatenación entre dos cadenas literales para que devuelva su edad en un console.log("")
+        #########################################################################################################################################
+        */
+
+
+        console.log('EJERCICIO 1: ')
+
+        var edad = '31'
+        var mensaje = 'su edad es: '
+        console.log(mensaje + edad);
+
+
+        /* 
+        #########################################################################################################################################
+        Utilice los elementos de valores numéricos para: sumar, restar, dividir, multiplicar.
+        #########################################################################################################################################
+        */
+
+
+        console.log('EJERCICIO 2: ')
+
+        var num1 = parseInt(prompt('Ingrese el primer numero: '))
+        var num2 = parseInt(prompt('Ingrese el segundo numero: '))
+
+        console.log(`${num1} + ${num2} = ` + (num1+num2));
+        console.log(`${num1} - ${num2} = ` + (num1-num2));
+        console.log(`${num1} * ${num2} = ` + (num1*num2));
+        console.log(`${num1} / ${num2} = ` + (num1/num2));
+
+
+        /* 
+        #########################################################################################################################################
+        Utilizando condicionales múltiples, realice un <script> que verifique la edad de jubilación de una persona
+        Ídem ejercicio anterior, verificando el sexo, siendo que la edad de jubilación para el hombre es de 65 años y la mujer a los 60 años.
+        #########################################################################################################################################
+        */
+
+
+        console.log('EJERCICIO 3 y 4: ')
+
+        const EDAD_JUBILACION_HOMBRE = 65
+        const EDAD_JUBILACION_MUJER = 60
+
+        edad = parseInt(prompt('ingrese su edad (en cifras)'))
+        sexo = prompt('ingrese su sexo (F o M)').toUpperCase() 
+
+        if (sexo == 'M'){
+            if (edad > EDAD_JUBILACION_HOMBRE)
+                console.log('Usted señor, está apto para jubilarse');  
+            else
+                console.log('Usted señor, todavía no está apto para jubilarse');
+        } else if (sexo == 'F') {
+            if (edad > EDAD_JUBILACION_MUJER)
+                console.log('Usted señora, está apta para jubilarse');   
+            else
+                console.log('Usted señora, todavía no está apta para jubilarse');
+        }
+
+
+        /* 
+        #########################################################################################################################################
+        Realizar un contador que llegue hasta el número 10.
+        #########################################################################################################################################
+        */
+
+
+        console.log('EJERCICIO 5: ')
+
+        var contador
+
+        for (contador = 1; contador <= 10; contador++)
+            console.log(`Vuelta número: ${contador}`)
+        
+
+    </script>   
+</body>
+</html>
